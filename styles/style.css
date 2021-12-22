@@ -19,7 +19,10 @@ body {
   padding-bottom: 20px;
   box-shadow: inset 0px -1px 0px rgba(66, 66, 66, 0.4);
 }
-
+.logo_nav {
+  display: inline-block;
+  font-size: 0px;
+}
 .logo {
   display: inline-block;
   width: 193px;
@@ -31,17 +34,18 @@ body {
   vertical-align: middle;
 }
 .nav {
-  padding-left: 870px;
   display: inline-block;
+  padding-left: 790px;
+  font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-  text-align: right;
-  font-weight: bold;
   color: #353535;
   vertical-align: middle;
 }
+
 .list-items {
   margin: 0;
+  padding: 0;
 }
 .nav li {
   display: inline-block;
@@ -50,10 +54,20 @@ body {
 .link-services,
 .link-contact {
   padding-left: 40px;
+  position: relative;
 }
+
 .clear_header {
   clear: both;
 }
+
+.image1 {
+  vertical-align: middle;
+}
+.vector-1_image {
+  padding-left: 9px;
+}
+
 .content_text {
   text-align: center;
   padding-top: 463px;
@@ -64,4 +78,40 @@ body {
   font-weight: 800;
   font-size: 80px;
   line-height: 98px;
+}
+.tooltip-about-us {
+  display: none;
+  width: 229px;
+  position: absolute;
+  top: 70px;
+  left: 1225px;
+  padding: 32px 24px 32px 24px;
+  background: #ffffff;
+  border: 1px solid rgba(66, 66, 66, 0.4);
+  border-radius: 4px;
+  z-index: 50px;
+}
+.link-About-us:hover .tooltip-about-us {
+  display: block;
+}
+.tooltip1 {
+  padding: 0;
+  margin: 0;
+}
+.tooltip1 li {
+  list-style: none;
+}
+.tooltip_link1 a,
+.tooltip_link2 a,
+.tooltip_link3 a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3a3a3a;
+}
+.tooltip_link2,
+.tooltip_link3 {
+  padding-top: 16px;
 }
