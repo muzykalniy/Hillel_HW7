@@ -15,8 +15,14 @@ body {
 }
 /* ========================header-logo========================= */
 .header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  background: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(66, 66, 66, 0.4);
 }
 .logo_nav {
@@ -34,6 +40,7 @@ body {
 }
 .nav {
   float: right;
+  vertical-align: middle;
 }
 .clear-fix {
   clear: both;
@@ -42,6 +49,9 @@ body {
   display: inline-block;
   padding: 0;
 }
+.list-items a:hover {
+  color: lightcoral;
+}
 .list-items li {
   display: inline-block;
   text-decoration: none;
@@ -49,6 +59,10 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+  color: #353535;
+}
+.list-items a {
+  text-decoration: none;
   color: #353535;
 }
 .fas {
@@ -60,26 +74,24 @@ body {
 .list-items li:first-child {
   margin-left: 0;
 }
-
-/* tooltip 1 для About */
-.link-about {
+/* ============tooltip 1 для About============= */
+.link_nav.link-about {
   position: relative;
 }
-
 .tooltip-block-1 {
   position: absolute;
   display: none;
   top: 53px;
   left: -46px;
-  display: inline-block;
   padding: 32px 24px;
   width: 229px;
   background: #ffffff;
   border: 1px solid rgba(66, 66, 66, 0.4);
   border-radius: 4px;
 }
-
-.tooltip-about {
+.tooltip-about,
+.tooltip-service,
+.tooltip-contact {
   padding: 0;
 }
 .tooltip-about li {
@@ -97,15 +109,94 @@ body {
 .tooltip-block-1 .links-tool-tip:first-child {
   margin: 0;
 }
-/* ============================================= */
+.link_nav.link-about:hover .tooltip-block-1 {
+  display: block;
+}
+/* ========================End tooltip about=================== */
+
+/* ============tooltip 2 для Service============= */
+.link_nav.link-service {
+  position: relative;
+}
+.tooltip-block-2 {
+  position: absolute;
+  display: none;
+  top: 53px;
+  left: -46px;
+  padding: 32px 24px;
+  width: 229px;
+  background: #ffffff;
+  border: 1px solid rgba(66, 66, 66, 0.4);
+  border-radius: 4px;
+}
+
+.tooltip-service li {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  list-style: none;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3a3a3a;
+}
+.tooltip-block-2 .links-tool-tip {
+  margin-top: 16px;
+}
+.tooltip-block-2 .links-tool-tip:first-child {
+  margin: 0;
+}
+.link_nav.link-service:hover .tooltip-block-2 {
+  display: block;
+}
+/* ========================End tooltip service=================== */
+
+/* ============tooltip 3 для Contact============= */
+.link_nav.link-contact {
+  position: relative;
+}
+.tooltip-block-3 {
+  position: absolute;
+  display: none;
+  top: 53px;
+  left: -50px;
+  padding: 32px 24px;
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid rgba(66, 66, 66, 0.4);
+  border-radius: 4px;
+}
+
+.tooltip-contact li {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  list-style: none;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3a3a3a;
+}
+.tooltip-block-3 .links-tool-tip {
+  margin-top: 16px;
+}
+.tooltip-block-3 .links-tool-tip:first-child {
+  margin: 0;
+}
+.link_nav.link-contact:hover .tooltip-block-3 {
+  display: block;
+}
+/* ========================End tooltip Contact=================== */
+
+/* =============hero 1,2============*/
 .content_text {
   text-align: center;
   padding-top: 463px;
   padding-bottom: 463px;
 }
-.hero1 {
+.hero1,
+.hero2 {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 80px;
   line-height: 98px;
 }
+/* ================end hero 1,2=============== */
