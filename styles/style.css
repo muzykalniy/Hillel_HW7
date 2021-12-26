@@ -17,9 +17,8 @@ body {
 .header {
   position: sticky;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   background: #ffffff;
@@ -187,9 +186,9 @@ body {
 /* ========================End tooltip Contact=================== */
 
 /* =============hero 1,2============*/
-.content_text {
+.content_text{
   text-align: center;
-  padding-top: 463px;
+  padding-top: 323px;
   padding-bottom: 463px;
 }
 .hero1,
@@ -198,5 +197,5 @@ body {
   font-weight: 800;
   font-size: 80px;
   line-height: 98px;
-}
+}section-our_story
 /* ================end hero 1,2=============== */
